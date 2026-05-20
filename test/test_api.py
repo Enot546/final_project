@@ -1,5 +1,6 @@
 import allure
 import random
+import pytest
 from api_client.AuhtApi import AuthApi
 from api_client.ProjectApi import ProjectApi
 from api_client.BoardApi import BoardApi
@@ -10,6 +11,7 @@ from testdata.DataProvider import DataProvider
 @allure.epic('Тестирование функционала REST API сервиса YouGile')
 @allure.severity(allure.severity_level.BLOCKER)
 @allure.suite('API-тесты по управлению проектами и колонками')
+@pytest.mark.api('тесты api')
 class TestAPI:
 
     @allure.story('Позитивные проверки по управлению проектами')

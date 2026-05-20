@@ -1,5 +1,6 @@
 import allure
 import random
+import pytest
 from selenium.webdriver.remote.webdriver import WebDriver
 from web_pages.IndexPage import IndexPage
 from web_pages.TeamPage import TeamPage
@@ -15,7 +16,8 @@ from testdata.DataProvider import DataProvider
 @allure.epic('Тестирование интерфейса сервиса YouGile')
 @allure.severity(allure.severity_level.BLOCKER)
 @allure.suite('UI-тесты на авторизацию, управлению проектами и задачами')
-class UITest:
+@pytest.mark.ui('тесты ui')
+class TestUI:
 
     @allure.story('Позитивные проверки авторизации')
     @allure.title('Авторизация ранее зарегистрированного пользователя')
