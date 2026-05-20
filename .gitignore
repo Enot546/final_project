@@ -1,0 +1,11 @@
+__pycache__
+.pytest_cache/
+.vscode/
+*.pyc *
+.log allure-results/
+chromedriver.exe
+test_data.py
+pages
+.vscode
+.venv
+test_data.json
