@@ -6,7 +6,7 @@
 Составлено 5 UI- и 5 API-автотестов, для формирования отчета о проведенных автотестах используется инструмент Allure.
 
 ### Шаги
-1. Склонировать проект `git clone https://github.com/avdarya/yougile_automation.git`
+1. Склонировать проект `git clone https://github.com/Enot546/final_project.git`
 2. Установить зависимости
 3. Запустить тесты с указанием пути к дирректории результатов тестирования `pytest --alluredir allure_files`
 4. Сформировать отчет `allure generate allure_files -o allure_report`
